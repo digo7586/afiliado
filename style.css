@@ -359,7 +359,18 @@ section {
   padding: 2rem;
   border: 1px solid var(--border);
   font-size: 1.4rem;
+  transition: transform 160ms ease, box-shadow 160ms ease,
+    border-color 160ms ease, background 160ms ease;
 }
+
+.card:hover {
+  transform: translateY(-4px) scale(1.02);
+  border-color: var(--primary);
+  box-shadow: 0 0 22px rgba(38, 206, 255, 0.35);
+  background: radial-gradient(circle at top left, #0f1e2c, #050c16);
+}
+
+
 
 .card h3 {
   font-size: 1.7rem;
